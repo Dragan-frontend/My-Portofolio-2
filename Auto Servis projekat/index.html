@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Auto Servis - Zakazivanje</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Online Zakazivanje Servisa</h1>
+            <form id="forma">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="ime" required>
+
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" required>
+
+                <label for="auto">Marka i model automobila:</label>
+                <input type="text" id="auto" required>
+
+                <label for="datum">Datum servisa</label>
+                <input type="text" id="datum" required>
+
+                <label for="usluga">Vrsta usluge:</label>
+                <select id="usluga">
+                    <option value="mali">Mali Servis</option>
+                    <option value="veliki">Veliki Servis</option>
+                    <option value="gume">Zamena guma</option>
+                    <option value="dijagnostika">Dijagnostika</option>
+                </select>
+                <button type="submit">Zakaži</button>
+            </form>
+            <div id="potvrda"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
